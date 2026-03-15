@@ -1,0 +1,41 @@
+AnonymousHavocSMP Custom Model Data Mapping
+============================================
+
+Create a resource pack with the following overrides:
+
+1. HUNTERS_COMPASS (CMD: 1001)
+   - Base item: COMPASS
+   - Model path: assets/minecraft/models/item/hunters_compass.json
+
+2. SIGHT_GLASS (CMD: 1002)
+   - Base item: SPYGLASS
+   - Model path: assets/minecraft/models/item/sight_glass.json
+
+3. BELL_OF_TRUTH (CMD: 1003)
+   - Base item: BELL
+   - Model path: assets/minecraft/models/item/bell_of_truth.json
+
+4. TOTEM_OF_SCRAMBLING (CMD: 1004)
+   - Base item: TOTEM_OF_UNDYING
+   - Model path: assets/minecraft/models/item/totem_of_scrambling.json
+
+5. SHARD_OF_ANONYMITY (CMD: 1005)
+   - Base item: ECHO_SHARD
+   - Model path: assets/minecraft/models/item/shard_of_anonymity.json
+
+6. SOUL_BINDER_DAGGER (CMD: 1006)
+   - Base item: NETHERITE_SWORD
+   - Model path: assets/minecraft/models/item/soul_binder_dagger.json
+
+Each base item model (e.g., compass.json) should include:
+{
+  "overrides": [
+    {
+      "predicate": { "custom_model_data": 1001 },
+      "model": "item/hunters_compass"
+    }
+  ]
+}
+
+Texture files should be placed in:
+assets/minecraft/textures/item/[relic_name].png

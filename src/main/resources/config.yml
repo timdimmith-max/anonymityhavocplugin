@@ -1,0 +1,31 @@
+database:
+  path: 'plugins/AnonymousHavocSMP/data.db'
+
+bans:
+  standard-death-hours: 24
+  execution-death-hours: 48
+  standard-kick-message: '&cEliminated. You may return in 24 hours.'
+  execution-kick-message: '&4Executed and erased. Return in 48 hours.'
+
+relics:
+  release-interval-days: 3
+  server-start-timestamp: 0
+
+anti-hoarding:
+  offline-threshold-hours: 48
+  check-interval-minutes: 30
+
+coordinate-hints:
+  broadcast-interval-hours: 4
+  radius: 150
+
+identity:
+  masked-name: 'Player'
+  reveal-duration-seconds: 10
+  bell-pulse-radius: 8
+
+totems:
+  disable-vanilla: true
+  prevents-death-ban: true
+
+debug: false

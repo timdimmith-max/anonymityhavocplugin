@@ -1,0 +1,19 @@
+name: AnonymityPlugin
+version: 1.0.2
+main: com.anonymoushavoc.AnonymousHavocPlugin
+api-version: '1.21'
+depend: [ProtocolLib]
+author: yourargentino
+description: Social deduction SMP with identity masking and relic system
+
+commands:
+  havoc:
+    description: Admin command for relic management
+    usage: /havoc give <id>
+    permission: havoc.admin
+    permission-message: You do not have permission to use this command
+
+permissions:
+  havoc.admin:
+    description: Allows access to admin commands
+    default: op
